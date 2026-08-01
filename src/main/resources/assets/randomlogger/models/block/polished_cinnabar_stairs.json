@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "randomlogger:block/polished_cinnabar",
+    "side": "randomlogger:block/polished_cinnabar",
+    "top": "randomlogger:block/polished_cinnabar"
+  }
+}

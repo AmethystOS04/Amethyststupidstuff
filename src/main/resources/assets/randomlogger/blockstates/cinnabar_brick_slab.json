@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "randomlogger:block/cinnabar_brick_slab"
+    },
+    "type=double": {
+      "model": "randomlogger:block/cinnabar_bricks"
+    },
+    "type=top": {
+      "model": "randomlogger:block/cinnabar_brick_slab_top"
+    }
+  }
+}

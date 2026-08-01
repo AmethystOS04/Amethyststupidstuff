@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "randomlogger:block/polished_sulfur",
+    "side": "randomlogger:block/polished_sulfur",
+    "top": "randomlogger:block/polished_sulfur"
+  }
+}

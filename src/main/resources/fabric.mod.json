@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "randomlogger",
+	"version": "${version}",
+	"name": "Amethyst's Stupid Stuff",
+	"description": "please help im stuck in a loop of adding stupid stuff",
+	"authors": [
+		"Amethyst"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/randomlogger/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"amethyst.logger.RandomLogger",
+			"amethyst.logger.BeybladeCore"
+		],
+		"client": [
+			"amethyst.logger.RandomLoggerClient"
+		]
+	},
+	"mixins": [
+		"randomlogger.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
