@@ -52,12 +52,14 @@ public class RandomLogger implements ModInitializer {
 		LOGGER.warn("sulfer");
 		LOGGER.warn("sulphur");
 
-		String message = messages.get(random.nextInt(messages.size()));
+		if (!messages.isEmpty()) {
+			String message = messages.get(random.nextInt(messages.size()));
 
-		if (beyblade) {
-			LOGGER.error(message);
-		} else {
-			LOGGER.info(message);
+			if (beyblade) {
+				LOGGER.error(message);
+			} else {
+				LOGGER.info(message);
+			}
 		}
 	}
 
