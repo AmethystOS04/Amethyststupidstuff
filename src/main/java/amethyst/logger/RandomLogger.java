@@ -35,8 +35,6 @@ public class RandomLogger implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LogCommand.register();
-		SongCommand.register();
 		boolean beyblade = random.nextInt(100) == 0;
 
 		String file = beyblade ? "beyblade.txt" : "logsnormal.txt";
@@ -54,12 +52,14 @@ public class RandomLogger implements ModInitializer {
 		LOGGER.warn("sulfer");
 		LOGGER.warn("sulphur");
 
-		String message = messages.get(random.nextInt(messages.size()));
+		if (!messages.isEmpty()) {
+			String message = messages.get(random.nextInt(messages.size()));
 
-		if (beyblade) {
-			LOGGER.error(message);
-		} else {
-			LOGGER.info(message);
+			if (beyblade) {
+				LOGGER.error(message);
+			} else {
+				LOGGER.info(message);
+			}
 		}
 	}
 
@@ -67,15 +67,14 @@ public class RandomLogger implements ModInitializer {
 
 		List<String> messages = new ArrayList<>();
 
-		try {
-			InputStream stream = RandomLogger.class
-					.getClassLoader()
-					.getResourceAsStream(fileName);
+		InputStream stream = RandomLogger.class
+				.getClassLoader()
+				.getResourceAsStream(fileName);
 
-			if (stream == null)
-				return messages;
+		if (stream == null)
+			return messages;
 
-			BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {
 
 			String line;
 
@@ -83,8 +82,6 @@ public class RandomLogger implements ModInitializer {
 				if (!line.isBlank())
 					messages.add(line);
 			}
-
-			reader.close();
 
 		} catch (IOException e) {
             throw new RuntimeException(e);

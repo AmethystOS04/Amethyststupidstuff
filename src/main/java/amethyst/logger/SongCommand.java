@@ -34,8 +34,6 @@ public class SongCommand {
 
                                             MusicPlayer.play(stream);
 
-                                            MusicPlayer.play(stream);
-
                                         } catch (Exception e) {
                                             e.printStackTrace();
                                         }
@@ -56,8 +54,6 @@ public class SongCommand {
                                                                     "randomlogger",
                                                                     "music/bliss.mp3"))
                                                     .open();
-
-                                            MusicPlayer.play(stream);
 
                                             MusicPlayer.play(stream);
 
