@@ -57,8 +57,6 @@ public class SongCommand {
 
                                             MusicPlayer.play(stream);
 
-                                            MusicPlayer.play(stream);
-
                                         } catch (Exception e) {
                                             e.printStackTrace();
                                         }
