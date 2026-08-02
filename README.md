@@ -1,6 +1,6 @@
 # amethyst's stupid stuff
 
-current version: **2.1.2**
+current version: **2.1.3**
 
 current mc versions supported: **1.21.11** and **26.2**
 
