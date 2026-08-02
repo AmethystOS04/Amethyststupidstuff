@@ -8,10 +8,13 @@ thxs to **@Spagles** for fixing the crashes for those dedicated server people :3
 
 if you want read the [wiki](https://github.com/AmethystOS04/Amethyststupidstuff/wiki) if you want to
 
+check out the [github](https://github.com/AmethystOS04/Amethyststupidstuff) if your on a download page for the mod
+
 adds random startup messages because minecraft logs weren't confusing enough
 
 ## features
 
+- can carpet bomb another player's build
 - random startup messages
 - 1% chance of a beyblade incident
 - emergency spinblade deployment
