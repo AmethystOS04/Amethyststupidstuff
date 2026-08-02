@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "randomlogger:block/cinnabar_bricks",
-    "side": "randomlogger:block/cinnabar_bricks",
-    "top": "randomlogger:block/cinnabar_bricks"
-  }
-}

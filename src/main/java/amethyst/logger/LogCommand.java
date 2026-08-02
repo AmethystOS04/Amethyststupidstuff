@@ -7,7 +7,7 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallba
 
 import java.util.List;
 import java.util.Random;
-
+import javazoom.jl.player.Player;
 public class LogCommand {
 
     private static final Random RANDOM = new Random();

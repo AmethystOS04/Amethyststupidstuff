@@ -1,20 +1,6 @@
 {
   "item.randomlogger.log_stick": "Log Stick",
   "block.randomlogger.sulfur": "Sulfur",
-  "block.randomlogger.sulfur_brick_slab": "Sulfur Brick Slab",
-  "block.randomlogger.sulfur_brick_stairs": "Sulfur Brick Stairs",
-  "block.randomlogger.sulfur_brick_wall": "Sulfur Brick Wall",
-  "block.randomlogger.sulfur_bricks": "Sulfur Bricks",
-  "block.randomlogger.sulfur_slab": "Sulfur Slab",
-  "block.randomlogger.sulfur_spike": "Sulfur Spike",
-  "block.randomlogger.sulfur_stairs": "Sulfur Stairs",
-  "block.randomlogger.sulfur_wall": "Sulfur Wall",
-  "block.randomlogger.cinnabar": "Cinnabar",
-  "block.randomlogger.cinnabar_brick_slab": "Cinnabar Brick Slab",
-  "block.randomlogger.cinnabar_brick_stairs": "Cinnabar Brick Stairs",
-  "block.randomlogger.cinnabar_brick_wall": "Cinnabar Brick Wall",
-  "block.randomlogger.cinnabar_bricks": "Cinnabar Bricks",
-  "block.randomlogger.cinnabar_slab": "Cinnabar Slab",
-  "block.randomlogger.cinnabar_stairs": "Cinnabar Stairs",
-  "block.randomlogger.cinnabar_wall": "Cinnabar Wall"
+  "iten.randomlogger.tnt_stick": "TNT Stick",
+  "iten.randomlogger.fireball_launcher": "Fireball Launcher"
 }

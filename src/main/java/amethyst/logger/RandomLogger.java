@@ -2,8 +2,11 @@ package amethyst.logger;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import amethyst.logger.items.TntStickItem;
-import amethyst.logger.blocks.ModBlocks;
+
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,7 +36,7 @@ public class RandomLogger implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LogCommand.register();
-		ModBlocks.initialize();
+		SongCommand.register();
 		boolean beyblade = random.nextInt(100) == 0;
 
 		String file = beyblade ? "beyblade.txt" : "logsnormal.txt";
@@ -48,6 +51,8 @@ public class RandomLogger implements ModInitializer {
 			LOGGER.warn("beyblades have been sent to the void");
 			LOGGER.warn("FUCK IT WE B E Y B L A D E- *EXPLOSION.MP3*");
 		LOGGER.warn("sulfur");
+		LOGGER.warn("sulfer");
+		LOGGER.warn("sulphur");
 
 		String message = messages.get(random.nextInt(messages.size()));
 
@@ -99,6 +104,32 @@ public class RandomLogger implements ModInitializer {
 									)
 							)
 					));
+	public static final Block SULFUR_BLOCK =
+			Registry.register(
+					BuiltInRegistries.BLOCK,
+					Identifier.fromNamespaceAndPath(MOD_ID, "sulfur_block"),
+					new Block(
+							Block.Properties.ofFullCopy(Blocks.SULFUR)
+									.setId(
+											ResourceKey.create(
+													Registries.BLOCK,
+													Identifier.fromNamespaceAndPath(MOD_ID, "sulfur_block")
+											)
+									)
+					));
+	public static final Item SULFUR_BLOCK_ITEM =
+			Registry.register(
+					BuiltInRegistries.ITEM,
+					Identifier.fromNamespaceAndPath(MOD_ID, "sulfur_block"),
+					new BlockItem(
+							SULFUR_BLOCK,
+							new Item.Properties().setId(
+									ResourceKey.create(
+											Registries.ITEM,
+											Identifier.fromNamespaceAndPath(MOD_ID, "sulfur_block")
+									)
+							)
+					));
 	public static final Item FIREBALL_LAUNCHER =
 			Registry.register(
 					BuiltInRegistries.ITEM,
@@ -143,32 +174,7 @@ public class RandomLogger implements ModInitializer {
 								output.accept(LOG_STICK);
 								output.accept(TNT_STICK);
 								output.accept(FIREBALL_LAUNCHER);
-								output.accept(ModBlocks.SULFUR);
-								output.accept(ModBlocks.POLISHED_SULFUR);
-								output.accept(ModBlocks.CHISELED_SULFUR);
-
-								output.accept(ModBlocks.SULFUR_BRICKS);
-								output.accept(ModBlocks.SULFUR_BRICK_SLAB);
-								output.accept(ModBlocks.SULFUR_BRICK_STAIRS);
-								output.accept(ModBlocks.SULFUR_BRICK_WALL);
-
-								output.accept(ModBlocks.SULFUR_SLAB);
-								output.accept(ModBlocks.SULFUR_STAIRS);
-								output.accept(ModBlocks.SULFUR_WALL);
-
-								output.accept(ModBlocks.POTENT_SULFUR);
-
-								output.accept(ModBlocks.CINNABAR);
-								output.accept(ModBlocks.CHISELED_CINNABAR);
-
-								output.accept(ModBlocks.CINNABAR_BRICKS);
-								output.accept(ModBlocks.CINNABAR_BRICK_SLAB);
-								output.accept(ModBlocks.CINNABAR_BRICK_STAIRS);
-								output.accept(ModBlocks.CINNABAR_BRICK_WALL);
-
-								output.accept(ModBlocks.CINNABAR_SLAB);
-								output.accept(ModBlocks.CINNABAR_STAIRS);
-								output.accept(ModBlocks.CINNABAR_WALL);
+								output.accept(SULFUR_BLOCK);
 							})
 
 							.build()
