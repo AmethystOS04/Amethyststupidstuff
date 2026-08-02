@@ -1,0 +1,24 @@
+- . make/change code
+- . update gradle.properties
+- . update build.gradle if using more dependicies
+- . test
+- . fix if needed
+- . test
+- . if good build
+- . if need change again after build then cry
+- . change and fix
+- . change properties again for new .jar package instead of replacing
+- . if still broken cry even more
+- . add more sulfur logs because its needed
+- . add even more
+- . and more
+- . and more
+- . and mo- *gets shot by a glock 17*
+- . if good push to repo
+- . update readme
+- . upload jar to github releases
+- . update wiki if new item/block
+- . upload to modrinth and pray the version api thing lets me upload
+- . copy github readme to modrinth readme
+- . plan next update
+- . repeat
