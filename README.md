@@ -6,6 +6,8 @@ current mc versions supported: **1.21.11** and **26.2**
 
 thxs to **@Spagles** for fixing the crashes for those dedicated server people :33
 
+if you want read the [wiki](https://github.com/AmethystOS04/Amethyststupidstuff/wiki) if you want to
+
 adds random startup messages because minecraft logs weren't confusing enough
 
 ## features
