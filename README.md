@@ -23,7 +23,10 @@ adds random startup messages because minecraft logs weren't confusing enough
 - sulfur and cinnabar blocks
 - multishot multiplies the amount of tnt shot
 - may ruin friendships depending on how much a tnt stick is used against them
-
+- song player
+- /song
+- /song badapple
+- /song bliss
 ## faq
 
 ### what does this mod do
@@ -41,6 +44,14 @@ we dont know
 ### what if i want a feature backported to 1.21.11 if its on 26.2
 
 backport it yourself or open a issue and ask for it
+
+### why does /song badapple start weird?
+
+i dont know either dont ask me
+
+### the song command doesnt work
+
+*emotional damage*
 
 ### my friend blew up my house with the tnt stick
 
