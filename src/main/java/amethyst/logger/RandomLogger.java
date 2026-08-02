@@ -35,8 +35,6 @@ public class RandomLogger implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LogCommand.register();
-		SongCommand.register();
 		boolean beyblade = random.nextInt(100) == 0;
 
 		String file = beyblade ? "beyblade.txt" : "logsnormal.txt";
