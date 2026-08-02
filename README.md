@@ -4,6 +4,8 @@ current version: **2.1.3**
 
 current mc versions supported: **1.21.11** and **26.2**
 
+thxs to **@Spagles** for fixing the crashes for those dedicated server people :33
+
 adds random startup messages because minecraft logs weren't confusing enough
 
 ## features
