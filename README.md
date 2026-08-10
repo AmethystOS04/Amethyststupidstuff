@@ -1,4 +1,6 @@
 # amethyst's stupid stuff
+<img width="339" height="24" alt="amethyst’s stupid stuff" src="https://github.com/user-attachments/assets/5456192d-a538-4230-8ce2-366434890472" />
+
 
 [discord](https://discord.gg/qyZHCDbvXW)
 
@@ -66,3 +68,7 @@ i dont know either dont ask me
 
 skill issue
 shouldnt have installed it on a server
+
+## end
+<img width="81" height="99" alt="separate_amethyst" src="https://github.com/user-attachments/assets/14e9b2c2-5d18-49c9-923b-c27b9ab34ce9" />
+
