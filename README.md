@@ -1,13 +1,24 @@
 # amethyst's stupid stuff
+<img width="339" height="24" alt="amethyst’s stupid stuff" src="https://github.com/user-attachments/assets/5456192d-a538-4230-8ce2-366434890472" />
+
+
+[discord](https://discord.gg/qyZHCDbvXW)
 
 current version: **2.1.3**
 
 current mc versions supported: **1.21.11** and **26.2**
 
+thxs to **@Spagles** for fixing the crashes for those dedicated server people :33
+
+if you want read the [wiki](https://github.com/AmethystOS04/Amethyststupidstuff/wiki) if you want to
+
+check out the [github](https://github.com/AmethystOS04/Amethyststupidstuff) if your on a download page for the mod
+
 adds random startup messages because minecraft logs weren't confusing enough
 
 ## features
 
+- can carpet bomb another player's build
 - random startup messages
 - 1% chance of a beyblade incident
 - emergency spinblade deployment
@@ -57,3 +68,7 @@ i dont know either dont ask me
 
 skill issue
 shouldnt have installed it on a server
+
+## end
+<img width="81" height="99" alt="separate_amethyst" src="https://github.com/user-attachments/assets/14e9b2c2-5d18-49c9-923b-c27b9ab34ce9" />
+
