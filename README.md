@@ -4,7 +4,7 @@
 
 [discord](https://discord.gg/qyZHCDbvXW)
 
-current version: **2.1.3**
+current version: **2.1.4 B1**
 
 current mc versions supported: **1.21.11** and **26.2**
 
