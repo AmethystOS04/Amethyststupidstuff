@@ -49,8 +49,15 @@ public class RandomLogger implements ModInitializer {
 			LOGGER.warn("beyblades have been sent to the void");
 			LOGGER.warn("FUCK IT WE B E Y B L A D E- *EXPLOSION.MP3*");
 		LOGGER.warn("sulfur");
+		LOGGER.warn("sufur");
+		LOGGER.warn("suflur");
+		LOGGER.warn("sulfur my beloved");
+		LOGGER.warn("sulfur shall rule the world >:3333");
 		LOGGER.warn("sulfer");
 		LOGGER.warn("sulphur");
+		LOGGER.warn("2.1.4 backport to 1.21.11 coming never >:3");
+		LOGGER.error("sorry those who are on 1.21.11 youre stuck with 2.0 :p");
+
 
 		if (!messages.isEmpty()) {
 			String message = messages.get(random.nextInt(messages.size()));
@@ -165,15 +172,26 @@ public class RandomLogger implements ModInitializer {
 									CreativeModeTab.Row.TOP,
 									0
 							)
-							.title(Component.literal("RandomLogger"))
+							.title(Component.literal("Utilities"))
 							.icon(() -> new ItemStack(LOG_STICK))
 							.displayItems((parameters, output) -> {
 								output.accept(LOG_STICK);
-								output.accept(TNT_STICK);
-								output.accept(FIREBALL_LAUNCHER);
 								output.accept(SULFUR_BLOCK);
 							})
 
+							.build()
+			);
+	public static final CreativeModeTab CHAOS_TAB =
+			Registry.register(
+					BuiltInRegistries.CREATIVE_MODE_TAB,
+					Identifier.fromNamespaceAndPath(MOD_ID, "chaos"),
+					CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1)
+							.title(Component.literal("OP Items")) // broken items (not literally but to where its really op) \\
+							.icon(() -> new ItemStack(TNT_STICK))
+							.displayItems((parameters, output) -> {
+								output.accept(FIREBALL_LAUNCHER);
+								output.accept(TNT_STICK);
+							})
 							.build()
 			);
 	public static void log(String level, String message) {

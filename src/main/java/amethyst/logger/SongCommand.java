@@ -65,6 +65,52 @@ public class SongCommand {
 
                                     }))
 
+
+                            .then(ClientCommands.literal("everlasting_fun")
+
+                                    .executes(ctx -> {
+
+                                        try {
+                                            InputStream stream = Minecraft.getInstance()
+                                                    .getResourceManager()
+                                                    .getResourceOrThrow(
+                                                            Identifier.fromNamespaceAndPath(
+                                                                    "randomlogger",
+                                                                    "music/everlastingfun.mp3"))
+                                                    .open();
+
+                                            MusicPlayer.play(stream);
+
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+
+                                        return 1;
+
+                                    }))
+
+                            .then(ClientCommands.literal("deep_below_the_code")
+
+                                    .executes(ctx -> {
+
+                                        try {
+                                            InputStream stream = Minecraft.getInstance()
+                                                    .getResourceManager()
+                                                    .getResourceOrThrow(
+                                                            Identifier.fromNamespaceAndPath(
+                                                                    "randomlogger",
+                                                                    "music/deepbelowthecode.mp3"))
+                                                    .open();
+
+                                            MusicPlayer.play(stream);
+
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+
+                                        return 1;
+
+                                    }))
             );
 
         });
