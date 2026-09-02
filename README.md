@@ -31,13 +31,22 @@ adds random startup messages because minecraft logs weren't confusing enough
 - fireball launcher
 - tnt stick
 - log stick
-- sulfur and cinnabar blocks
 - multishot multiplies the amount of tnt shot
 - may ruin friendships depending on how much a tnt stick is used against them
-- song player
+- log grenade
+- wind wand reimagined
+- the end's end
+- the razor of the void
+- corrupted blade
+- the void's edge
 - /song
 - /song badapple
 - /song bliss
+- /song deep_below_the_code
+- /song everlasting_fun
+- /song quiet_please
+- /song enderman_rap
+- /song the_only_thing_they_fear_is_you
 ## faq
 
 ### why do updates take so long
