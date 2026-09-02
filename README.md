@@ -40,6 +40,13 @@ adds random startup messages because minecraft logs weren't confusing enough
 - /song bliss
 ## faq
 
+### why do updates take so long
+
+because i have school to do and dont have access to the project code to work on between classes
+plus
+i havent gotten my school laptop yet
+so yea
+
 ### what does this mod do
 
 yes
