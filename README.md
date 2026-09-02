@@ -4,7 +4,7 @@
 
 [discord](https://discord.gg/qyZHCDbvXW)
 
-current version: **2.1.4 B3**
+current version: **2.1.4 B4**
 
 current mc versions supported: **1.21.11** and **26.2**
 
@@ -68,6 +68,18 @@ i dont know either dont ask me
 
 skill issue
 shouldnt have installed it on a server
+
+## Other Projects
+
+### Inventory UI
+- Inventory UI (Inv UI) is a html based project made just for fun and gets updates every so often
+- click [here](https://github.com/AmethystOS04/Inventory-UI-V3) to take a look at the only place the source exists online
+- the wiki for will be made once i get some more content in
+
+### Aurora Borealis GUI
+- **Aurora Borealis GUI** (ABGUI) is a texture pack i made with mcglint
+- it is staying at 1.0 unless more gui stuff comes out
+- click [here](https://modrinth.com/resourcepack/aurora-borealis-gui) for the pack
 
 ## end
 <img width="81" height="99" alt="separate_amethyst" src="https://github.com/user-attachments/assets/14e9b2c2-5d18-49c9-923b-c27b9ab34ce9" />
