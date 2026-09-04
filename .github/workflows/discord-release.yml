@@ -24,6 +24,7 @@ jobs:
           import json
           import os
           import urllib.request
+import urllib.error
 
           payload = {
               "username": "Amethyst's Stupid Stuff",
@@ -49,6 +50,13 @@ jobs:
               method="POST"
           )
 
-          urllib.request.urlopen(req).read()
+          try:
+    response = urllib.request.urlopen(req)
+    print(response.status)
+    print(response.read().decode())
+except urllib.error.HTTPError as e:
+    print("Discord returned:", e.code)
+    print(e.read().decode())
+    raise
           PY
 
