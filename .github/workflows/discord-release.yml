@@ -1,0 +1,52 @@
+name: Discord Release Announcement
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  discord:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send release to Discord
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RELEASE_NAME: ${{ github.event.release.name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_BODY: ${{ github.event.release.body }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          payload = {
+              "username": "Amethyst's Stupid Stuff",
+
+              "embeds": [
+                  {
+                      "title": os.environ["RELEASE_NAME"],
+                      "url": os.environ["RELEASE_URL"],
+                      "description": os.environ["RELEASE_BODY"],
+                      "color": 0x9B59B6,
+
+                      "footer": {
+                          "text": f"Amethyst's Stupid Stuff • {os.environ['RELEASE_TAG']}"
+                      }
+                  }
+              ]
+          }
+
+          req = urllib.request.Request(
+              os.environ["WEBHOOK"],
+              data=json.dumps(payload).encode(),
+              headers={"Content-Type": "application/json"},
+              method="POST"
+          )
+
+          urllib.request.urlopen(req).read()
+          PY
+
