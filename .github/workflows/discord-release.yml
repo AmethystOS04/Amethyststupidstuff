@@ -19,4 +19,4 @@ jobs:
           RELEASE_BODY: ${{ github.event.release.body }}
           RELEASE_URL: ${{ github.event.release.html_url }}
 
-                run: python3 scripts/discord_release.py
+        run: python3 scripts/discord_release.py
