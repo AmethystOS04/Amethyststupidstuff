@@ -1,6 +1,16 @@
 {
   "item.randomlogger.log_stick": "Log Stick",
   "block.randomlogger.sulfur": "Sulfur",
-  "iten.randomlogger.tnt_stick": "TNT Stick",
-  "iten.randomlogger.fireball_launcher": "Fireball Launcher"
+  "item.randomlogger.tnt_stick": "TNT Stick",
+  "item.randomlogger.fireball_launcher": "Fireball Launcher",
+  "item.randomlogger.log_gernade": "Log Grenade",
+  "item.randomlogger.wind_wand": "Wind Wand - Reimagined",
+  "item.randomlogger.the_razor_of_the_end": "The Razor of the End",
+     "item.randomlogger.the_ends_end": "The End's End",
+  "item.randomlogger.the_voids_edge": "The Void's Edge",
+  "item.randomlogger.corrupted_blade": "Corrupted Blade",
+  "item.randomlogger.lightning_bomb": "Lightning Bomb",
+  "item.randomlogger.razor_of_hell": "Razor of Hell",
+  "item.randomlogger.razor_of_smol": "Razor of Smol",
+  "item.randomlogger.the_end_crystals_beam": "The End Crystal's Beam"
 }

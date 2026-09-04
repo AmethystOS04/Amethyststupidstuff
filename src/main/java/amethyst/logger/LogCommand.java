@@ -4,16 +4,57 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 
 import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.client.Minecraft;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import javazoom.jl.player.Player;
 public class LogCommand {
-
+    private static List<String> everlastingFunLogs = List.of();
+    private static int everlastingFunIndex = 0;
+    private static int everlastingFunTimer = 0;
+    private static boolean everlastingFunPlaying = false;
     private static final Random RANDOM = new Random();
+    private static void playEverlastingFun() {
+        everlastingFunLogs =
+                RandomLogger.loadMessages("everlasting_fun.txt");
 
+        if (everlastingFunLogs.isEmpty()) {
+            return;
+        }
+
+        everlastingFunIndex = 0;
+        everlastingFunTimer = 0;
+        everlastingFunPlaying = true;
+    }
     public static void register() {
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
 
+            if (!everlastingFunPlaying) {
+                return;
+            }
+
+            if (everlastingFunTimer > 0) {
+                everlastingFunTimer--;
+                return;
+            }
+
+            if (everlastingFunIndex >= everlastingFunLogs.size()) {
+                everlastingFunPlaying = false;
+                return;
+            }
+
+            RandomLogger.log(
+                    "info",
+                    everlastingFunLogs.get(everlastingFunIndex)
+            );
+
+            everlastingFunIndex++;
+
+            everlastingFunTimer = 20;
+        });
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
 
 
@@ -126,7 +167,13 @@ public class LogCommand {
 
                                         return 1;
                                     }))
+                            .then(ClientCommands.literal("everlasting_fun")
+                                    .executes(ctx -> {
 
+                                        playEverlastingFun();
+
+                                        return 1;
+                                    }))
                             // /log beyblade
                             .then(ClientCommands.literal("beyblade")
 
